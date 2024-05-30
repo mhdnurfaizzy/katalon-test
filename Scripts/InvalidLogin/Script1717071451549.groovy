@@ -29,9 +29,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Se
 
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
 
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/h2_Make Appointment'))
-
-WebUI.verifyElementText(findTestObject(null), '')
+WebUI.verifyElementText(findTestObject('Page_CURA Healthcare Service/loginFailledMessage'), 'Login failed! Please ensure the username and password are valid.')
 
 WebUI.closeBrowser()
 
